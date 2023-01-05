@@ -9,7 +9,6 @@ def calc_passwd(sn):
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         serial = sys.argv[1]  # you can input your SN here.
-        print(sys.argv)
         print(calc_passwd(serial))
     else:
         serial = input('input your SN eg: 12345/A1BC23456 \n')
