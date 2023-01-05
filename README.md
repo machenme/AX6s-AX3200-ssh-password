@@ -2,6 +2,7 @@
 
 ### How to use
 go to 192.168.31.1(default) and logo in to check SN  
+make sure change 12345/A1BC23456 to your SN  
 ```ubuntu
 python3 calc_passwd.py 12345/A1BC23456
 ```
