@@ -7,8 +7,9 @@ def calc_passwd(sn):
     return md5_value.hexdigest()[:8]
 
 if __name__ == "__main__":
-    serial = ''  # you can input your SN here.
-    if serial != '':
+    if len(sys.argv) > 1:
+        serial = sys.argv[1]  # you can input your SN here.
+        print(sys.argv)
         print(calc_passwd(serial))
     else:
         serial = input('input your SN eg: 12345/A1BC23456 \n')
